@@ -9,7 +9,7 @@ description = "Find comments and docs referencing identifiers that no longer exi
 readme = "README.md"
 requires-python = ">=3.9"
 license = { text = "MIT" }
-authors = [{ name = "JaydenCJ" }]
+authors = [{ name = "JaydenCJ", email = "aisingioro.kiyon@gmail.com" }]
 keywords = ["comments", "docstrings", "linter", "static-analysis", "refactoring", "ci", "documentation-drift"]
 classifiers = [
     "Development Status :: 3 - Alpha",
