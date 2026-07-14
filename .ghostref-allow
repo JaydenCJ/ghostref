@@ -1,0 +1,26 @@
+# Illustrative identifiers used in ghostref's own docstrings and comments.
+# They name *examples* (a fictional shop with carts and totals), not code in
+# this tree, so the self-scan (`ghostref scan src --root . --allow-file
+# .ghostref-allow`) allowlists them instead of deleting the documentation.
+Cart.total
+CartSnapshot
+Class.attr
+Parameters
+cart.compute_total
+cls.attr
+compute_total
+handlers.retry
+legacy_total
+line_offset
+pkg
+pkg.Cart
+pkg.mod
+pkg.util
+retry
+self.attr
+shop.cart
+shop.cart.Cart
+shop.cart.Cart.total
+src
+src.pkg.mod
+util

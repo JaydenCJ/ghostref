@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="940" height="632" viewBox="0 0 940 632" font-family="Menlo, Consolas, 'DejaVu Sans Mono', monospace" font-size="14">
+  <!-- Terminal transcript of a real run of `ghostref scan examples/demo_project
+       --docs` against this repository. Text is copied verbatim from an actual
+       execution; omitted lines are marked with "..." in place. -->
+  <rect width="940" height="632" rx="10" fill="#0d1117"/>
+  <rect width="940" height="34" rx="10" fill="#161b22"/>
+  <rect y="20" width="940" height="14" fill="#161b22"/>
+  <circle cx="22" cy="17" r="6" fill="#ff5f57"/>
+  <circle cx="42" cy="17" r="6" fill="#febc2e"/>
+  <circle cx="62" cy="17" r="6" fill="#28c840"/>
+  <text x="470" y="22" fill="#8b949e" text-anchor="middle" font-size="12">ghostref — your comments reference deleted code</text>
+  <g fill="#c9d1d9">
+    <text x="24" y="62"><tspan fill="#7ee787">$</tspan> ghostref scan examples/demo_project --docs</text>
+    <text x="24" y="90" fill="#79c0ff">GUIDE.md</text>
+    <text x="24" y="114">  6:33  ghost <tspan fill="#f85149">'load_inventory_csv'</tspan>  [markdown, high]</text>
+    <text x="24" y="138" fill="#8b949e">      no symbol named 'load_inventory_csv' exists in the scanned code</text>
+    <text x="24" y="162" fill="#8b949e">      &gt; Bulk loading still goes through `load_inventory_csv()` — this sentence is a</text>
+    <text x="24" y="194" fill="#79c0ff">inventory.py</text>
+    <text x="24" y="218" fill="#8b949e">  ...</text>
+    <text x="24" y="242">  19:1  ghost <tspan fill="#f85149">'quantiy'</tspan>  [param, high]</text>
+    <text x="24" y="266" fill="#8b949e">      docstring of 'reserve' documents parameter 'quantiy', but the signature does not accept it</text>
+    <text x="24" y="290" fill="#8b949e">      &gt; quantiy: How many units to reserve.</text>
+    <text x="24" y="314" fill="#d29922">      did you mean 'quantity'?</text>
+    <text x="24" y="342">  23:33  ghost <tspan fill="#f85149">'sync_stock_levels'</tspan>  [comment, high]</text>
+    <text x="24" y="366" fill="#8b949e">      no symbol named 'sync_stock_levels' exists in the scanned code</text>
+    <text x="24" y="390" fill="#8b949e">      &gt; # Delegates the heavy lifting to sync_stock_levels() so the ledger</text>
+    <text x="24" y="414" fill="#8b949e">  ...</text>
+    <text x="24" y="450"><tspan fill="#f85149">8 ghost references in 3 files</tspan> — scanned 2 Python files,</text>
+    <text x="24" y="474">1 Markdown file, 17 live symbols, 19 candidate tokens</text>
+    <text x="24" y="514"><tspan fill="#7ee787">$</tspan> echo $?  <tspan fill="#8b949e"># non-zero exit: ready for CI</tspan></text>
+    <text x="24" y="538" fill="#f85149">1</text>
+    <text x="24" y="578" fill="#8b949e"># the healthy refs — reserve(), audit_ledger, pricing.quote — stay quiet</text>
+  </g>
+</svg>
